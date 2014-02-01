@@ -5,6 +5,7 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^$', include('schedulepp.urls')),
     # Examples:
     # url(r'^$', 'rude.views.home', name='home'),
     # url(r'^rude/', include('rude.foo.urls')),
